@@ -14,14 +14,15 @@ catkin_make --pkg profi_serv_pkg_1
 
 Just run configure.launch
 ```
-roslaunch profi_serv_pkg_1 start_configure_1.launch
+roslaunch profi_serv_pkg_1 start_configure.launch
 ```
 
 ### Required libraries
 
 ```
 time
-random
 tqdm
 os
+platform
+psutil
 ```
