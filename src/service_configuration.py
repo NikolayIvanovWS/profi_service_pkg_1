@@ -5,8 +5,8 @@ import time
 from tqdm import tqdm
 import os
 
-configuration_number = "g087#RW"
-version = "0.1.0"
+configuration_number = "6uV&7pr"
+version = "0.1.1"
 
 def simulate_calculations():
     print("Service package 1: version {}".format(version))
@@ -27,11 +27,13 @@ def simulate_progress_bar():
 def perform_network_check():
     print("Performing network checks...")
     os.system("ifconfig | grep -w inet")
-    print("Service package 1: configuration complete!")
+
+def finalize():
+    print("Service package 1: successfully configured!")
     print("Service package 1: configuration checksum: {}".format(configuration_number))
 
 if __name__ == "__main__":
     simulate_calculations()
     simulate_progress_bar()
     perform_network_check()
-
+    finalize()
