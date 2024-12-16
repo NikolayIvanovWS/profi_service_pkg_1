@@ -1,4 +1,4 @@
-# profi_serv_1
+# profi_serv_pkg_1
 
 ### Installation
 ```
